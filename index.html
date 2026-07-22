@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Scooterama Ecommerce</title>
+</head>
+<body>
+
+  <div id="productCard">
+    <div class="closeIcon" onclick="hideCard();">X</div>
+    <div id="productCardLeft"></div>
+    <div id="productCardRight"></div>
+  </div>
+  
+  <div id="cartPanel">
+    <button type="button" onclick="clearCart();">Clear Items</button>
+    <div class="closeIcon" onclick="hideCart();">X</div>
+  </div>
+
+  <div id="logo">
+    <img src="assets/images/logo.png" alt="logo">
+  </div>
+  
+  <div id="social">
+    <img src="assets/images/dragonbit-64.png" alt="dragonbit" class="socialIcon">
+    <img src="assets/images/linkedin-64.png" alt="linkedIn" class="socialIcon">
+    <img src="assets/images/twitter-64.png" alt="twitter" class="socialIcon">
+  </div>
+  
+  <div id="hamburger" onclick="toggleMenu();">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  
+  <div id="cartIcon" onclick="showCart();">
+    <span id="cartCounter">0</span>
+    <img src="assets/images/cart.png" alt="cart icon">
+  </div>
+  
+  <nav class="limelightRegular">
+    <a href="#" title="home" onclick="closeNav();">home</a>
+    <a href="#about" title="about" onclick="closeNav();">about</a>
+    <a href="#collections" title="collections" onclick="closeNav();">collections</a>
+    <a href="#products" title="products" onclick="closeNav();">products</a>
+    <a href="#projects" title="projects" onclick="closeNav();">projects</a>
+    <a href="#contact" title="contact" onclick="closeNav();">contact</a>
+  </nav>
+
+  <div id="grid">
+    <header>
+      <h1 class="lobsterRegular">Scooterama — Where Style Meets Motion.</h1>
+    </header>
+    
+    <div id="about">
+      <h1 class="lobsterRegular">Who is Scooterama?</h1>
+      <div>
+        <img class="bioPic" src="assets/images/bioPic1.png" alt="Bio Picture">
+        <img class="bioPic" src="assets/images/bioPic2.png" alt="Bio Picture">
+      </div>
+      <p>Scooterama rides at the front of California's urban movement, mixing bold design with a laid-back West Coast spirit. Born in the streets where surf culture meets tech culture, the company set out with a simple idea: scooters should feel as cool as they look. Their lineup blends sleek engineering, vibrant colorways, and whisper-quiet motors that glide through the city like a vibe on wheels. Whether you're commuting, exploring, or just cruising for the joy of it, Scooterama turns everyday travel into a small adventure.</p>
+      <p>What really sets Scooterama apart is the personality baked into every ride. This is a brand that celebrates creativity, independence, and a little playful rebellion—exactly what California does best. Riders don't just get from point A to point B; they join a community that values freedom, style, and clean energy. With events, pop-up meets, and collaborations with local artists, Scooterama has become the scooter equivalent of a cool neighborhood café: effortlessly hip, unmistakably local, and always in motion.</p>
+    </div>
+    
+    <div id="collections">
+      <img src="assets/images/record1.png" alt="record image 1" class="record">
+      <img src="assets/images/record2.png" alt="record image 2" class="record">
+      <img src="assets/images/record3.png" alt="record image 3" class="record">
+      <img src="assets/images/record4.png" alt="record image 4" class="record">
+      <img src="assets/images/record5.png" alt="record image 5" class="record">
+      <img src="assets/images/record6.png" alt="record image 6" class="record">
+    </div>
+    
+    <div id="products">
+      <h1 class="lobsterRegular">Our Products</h1>
+    </div>
+    
+    <div id="projects">
+      <div class="project-card">
+        <img class="projectImage" src="assets/images/project1.png" alt="Urban Mobility App">
+        <h1>Urban Mobility App</h1>
+        <p>A mobile application that helps users find the best scooter routes through city traffic. Features real-time traffic updates, charging station locations, and route optimization for the fastest and safest paths.</p>
+        <p>Built with React Native and integrated with Google Maps API. The app reduces average commute time by 23% according to user feedback from our beta test in San Francisco.</p>
+      </div>
+      <div class="project-card">
+        <img class="projectImage" src="assets/images/project2.png" alt="Scooter Safety Dashboard">
+        <h1>Scooter Safety Dashboard</h1>
+        <p>An analytics dashboard for city planners to monitor scooter usage patterns and identify high-risk areas. Includes heat maps, accident reporting, and usage statistics.</p>
+        <p>Developed with D3.js and Node.js, this tool has been adopted by three major California cities to improve urban planning and reduce scooter-related incidents by 18%.</p>
+      </div>
+      <div class="project-card">
+        <img class="projectImage" src="assets/images/project3.png" alt="Eco-Charge Network">
+        <h1>Eco-Charge Network</h1>
+        <p>A network of solar-powered charging stations for electric scooters. Each station generates its own power and provides free charging to Scooterama users.</p>
+        <p>Currently deployed in 15 locations across Los Angeles and San Diego. The project has offset over 5,000 kg of CO2 emissions in its first year of operation.</p>
+      </div>
+    </div>
+    
+    <div id="contact">
+      <h1 class="lobsterRegular">Get In Touch</h1>
+      <div class="contact-container">
+        <div class="contact-form">
+          <h2>Send us a message</h2>
+          <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message..."></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 Scooterama, all rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script src="js/jquery.js"></script>
+  <script src="js/Item.js"></script>
+  <script src="js/Cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
