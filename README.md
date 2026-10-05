@@ -30,8 +30,8 @@ This project demonstrates foundational e-commerce logic in vanilla JavaScript. I
 ## 🚀 Setup & Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/snaimio/ScooteramaEcommerce.git
-   cd ScooteramaEcommerce
+   git clone https://github.com/snaimio/scooterama-ecommerce-js.git
+   cd scooterama-ecommerce-js
    ```
 2. Open `index.html` in your web browser.
 
